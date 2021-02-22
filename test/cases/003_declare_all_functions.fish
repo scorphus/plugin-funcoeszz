@@ -1,0 +1,8 @@
+it_should "declare all 190+ functions" "test (functions | grep zz | wc -l) -ge 190"
+it_should "declare, for instance, zzaleatorio" "zzaleatorio | grep -q '\d'"
+it_should "declare, for instance, zzexcuse" "zzexcuse | grep -q ."
+it_should "declare, for instance, zzlorem" "zzlorem | grep -q 'Lorem ipsum dolor sit amet'"
+it_should "declare, for instance, zzmd5" "test (echo 'fish' | zzmd5) = e08e4506d2e3f370a5e8ab79647df309"
+it_should "declare, for instance, zzromanos" "test (zzromanos MMXIX) = 2019"
+it_should "declare, for instance, zzstr2hexa" "test (zzstr2hexa fish) = '66 69 73 68'"
+it_should "declare, for instance, zzrot13" "test (zzrot13 svfu) = fish"
