@@ -1,11 +1,11 @@
-set -q ZZPATH; or set -gx ZZPATH $HOME/funcoeszz/funcoeszz
-if test -e "$ZZPATH" -a -x "$ZZPATH"
+if type -q sed
   for file in {(dirname $ZZPATH)/zz/*,zzajuda,zztool,zzzz}
     set func (basename $file .sh)
-    function $func -V func -d "funcoeszz"
+    set desc (sed '2!d' $file | cut -b 3-)
+    function $func -V func -d "$desc"
       $ZZPATH $func $argv
     end
   end
 else
-  echo "Por favor, instale as funcoeszz https://github.com/funcoeszz e defina ZZPATH"
+  echo "Por favor, instale o sed. Ex: apt-get install sed"
 end
