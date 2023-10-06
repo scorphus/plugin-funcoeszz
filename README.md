@@ -14,31 +14,10 @@
 
 ## Instalação
 
-A começar, instale as [funcoeszz]. Basta clonar o [repositório][funcoeszz-repo]:
-:wink:
-
-```fish
-⋊> ~ git clone https://github.com/funcoeszz/funcoeszz.git ~/funcoeszz
-```
-
-Em seguida, instale este plugin:
+Mais fácil impossivel! Basta instalar este plugin com: :wink:
 
 ```fish
 ⋊> ~ omf install https://github.com/scorphus/plugin-funcoeszz
-```
-
-### Instalação personalizada (opcional)
-
-Caso prefira instalar as funcoeszz noutro diretório que não o padrão,
-`~/funcoeszz`, você deve definir a variável `$ZZPATH`, que armazena o **caminho
-para o _script_ `funcoeszz`**.
-
-Por exemplo, supondo que você instalou as funcoeszz em `~/.funcoeszz`, adicione
-a seguinte linha a um dos arquivos `~/.config/fish/config.fish`, ou
-`~/.config/fish/conf.d/funcoeszz.fish` ou `~/.config/omf/init.fish`:
-
-```fish
-set -gx ZZPATH $HOME/.funcoeszz/funcoeszz
 ```
 
 ## Uso
@@ -94,7 +73,6 @@ Para mais, veja a [lista completa com todas as funções][function-list].
 [omf-badge]: https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square
 [build-status-badge]: https://github.com/scorphus/plugin-funcoeszz/actions/workflows/funcoeszz.yml/badge.svg
 [build-status-link]: https://github.com/scorphus/plugin-funcoeszz/actions/workflows/funcoeszz.yml
-[funcoeszz-repo]: https://github.com/funcoeszz/funcoeszz
 [gloria]: https://github.com/funcoeszz/funcoeszz#instala%C3%A7%C3%A3o-das-fun%C3%A7%C3%B5es-zz---vers%C3%A3o-beta
 [function-list]: https://funcoeszz.net/list.html
 [mit]: https://opensource.org/licenses/MIT
