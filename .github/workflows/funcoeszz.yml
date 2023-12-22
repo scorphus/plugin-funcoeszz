@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: Change current working directory owner and group
         run: sudo chown -R nemo:nemo .
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: git clone ${FUNCOESZZ_REPO} ~/funcoeszz
       - name: Install plugin from current working directory
         run: fish -c "omf install (pwd)"
       - name: Run tests
